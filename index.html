@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - N. Klein</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header fixado no topo -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-left">
+                <h1 class="logo">N. Klein</h1>
+            </div>
+            <div class="navbar-right">
+                <ul class="nav-menu">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#projetos">projects</a></li>
+                    <li><a href="#sobre">about</a></li>
+                </ul>
+                <!-- <a href="#cv" class="btn-outline">CV</a> -->
+            </div>
+            <!-- Menu hamburger para mobile -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção principal (Hero) -->
+    <main class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-left">
+                <div class="animated-text">
+                    <span id="animated-text"></span>
+                </div>
+                <h2 class="hero-name">Eu sou o Natanael Klein</h2>
+                <p class="hero-subtitle">Analista de dados e desenvolvedor. Transformo dados em decisões inteligentes.</p>
+            </div>
+        </div>
+        <!-- Flecha para rolar para baixo -->
+        <div class="scroll-arrow">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 13L12 18L17 13M7 6L12 11L17 6" stroke="#007bff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+    </main>
+
+    <!-- Seção Projetos -->
+    <section class="projetos" id="projetos">
+        <div class="container">
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section class="sobre" id="sobre">
+        <div class="container">
+        <div class="sobre-content">
+            <div class="sobre-image">
+                <img src="images/me.jpeg" alt="Foto de N. Klein">
+            </div>
+            <div class="sobre-text">
+                <p class="hero-subtitle">Graduando em Informática Biomédica pela Universidade Federal de Ciências da Saúde, atuo com análise de dados, business intelligence e engenharia de dados.<br><br>Tenho experiência transformando dados em insights práticos, principalmente em projetos na área da saúde e em ambientes corporativos.<br><br>   </p>
+                <a href="https://www.linkedin.com/in/natanaelklein/" class="btn-link" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 N. Klein. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
