@@ -47,7 +47,52 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
 });
 
-// Adicionar animação ao hamburger no CSS se quiser, mas por enquanto toggle class
+// Carrossel de Projetos
+const projects = document.querySelectorAll('.project-card');
+const navLeft = document.getElementById('navLeft');
+const navRight = document.getElementById('navRight');
+let currentIndex = 0;
+
+function updateCarousel() {
+    projects.forEach((project, index) => {
+        project.classList.remove('project-card-center', 'project-card-left', 'project-card-right');
+        
+        const position = (index - currentIndex + projects.length) % projects.length;
+        
+        if (position === 0) {
+            project.classList.add('project-card-center');
+        } else if (position === projects.length - 1) {
+            project.classList.add('project-card-left');
+        } else {
+            project.classList.add('project-card-right');
+        }
+    });
+}
+
+navLeft?.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + projects.length) % projects.length;
+    updateCarousel();
+});
+
+navRight?.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % projects.length;
+    updateCarousel();
+});
+
+// Permitir clique nos cards laterais para rotacionar
+projects.forEach((project, index) => {
+    project.addEventListener('click', (e) => {
+        if (project.classList.contains('project-card-left')) {
+            e.preventDefault();
+            navLeft?.click();
+        } else if (project.classList.contains('project-card-right')) {
+            e.preventDefault();
+            navRight?.click();
+        }
+    });
+});
+
+updateCarousel();
 
 // Animação de entrada dos cards
 const cards = document.querySelectorAll('.card');

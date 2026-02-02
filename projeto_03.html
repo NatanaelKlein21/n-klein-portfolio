@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Vendas - N. Klein</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-detail {
+            padding: 120px 2rem 4rem;
+            max-width: 1000px;
+            margin: 0 auto;
+            min-height: 100vh;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: gap 0.3s ease;
+        }
+
+        .back-button:hover {
+            gap: 1rem;
+        }
+
+        .project-detail-header {
+            margin-bottom: 2rem;
+        }
+
+        .project-detail-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .project-detail-meta {
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .project-detail-image {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-detail-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        .project-detail-content h2 {
+            font-size: 2rem;
+            color: #333;
+            margin: 2rem 0 1rem;
+        }
+
+        .project-detail-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .metrics-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 2rem;
+        }
+
+        .metrics-list li {
+            padding: 0.8rem 0;
+            padding-left: 2rem;
+            position: relative;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .metrics-list li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #007bff;
+            font-weight: 600;
+        }
+
+        .section-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 2rem 0 1.5rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: #fff;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            margin: 1.5rem 0;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .tech-badge {
+            background-color: #f0f4ff;
+            color: #007bff;
+            padding: 0.6rem 1.2rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border: 1px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header fixado no topo -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-left">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h1 class="logo">N. Klein</h1>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo do Projeto -->
+    <div class="project-detail">
+        <a href="index.html#projetos" class="back-button">← Voltar para Projetos</a>
+        
+        <div class="project-detail-header">
+            <h1 class="project-detail-title">Dashboard de Análise de Vendas</h1>
+            <p class="project-detail-meta">Análise de performance de vendas com previsões e tendências de mercado</p>
+        </div>
+
+        <img src="images/projeto_01.png" alt="Dashboard de Vendas" class="project-detail-image">
+
+        <div class="project-detail-content">
+            <h2>Sobre o Projeto</h2>
+            <p>
+                Este dashboard consolida dados de vendas de múltiplos canais, oferecendo uma visão 360° de performance comercial. A ferramenta foi desenvolvida para suportar decisões estratégicas com base em análises históricas, tendências atuais e previsões futuras.
+            </p>
+            <p>
+                Com foco em acionabilidade, o projeto destaca oportunidades de crescimento, identifica produtos com melhor performance e analisa comportamentos de clientes de alto valor.
+            </p>
+
+            <h2>Principais Métricas e Análises</h2>
+            <ul class="metrics-list">
+                <li><strong>Faturamento Mensal:</strong> Evolução de receita com comparação YoY</li>
+                <li><strong>Performance por Produto:</strong> Ranking de produtos por volume e margem</li>
+                <li><strong>Análise de Clientes:</strong> Segmentação e lifetime value</li>
+                <li><strong>Canais de Venda:</strong> Desempenho comparativo (online, varejo, direto)</li>
+                <li><strong>Previsão de Vendas:</strong> Projeções de curto e médio prazo</li>
+                <li><strong>Taxa de Conversão:</strong> Funil de vendas e análise de perdas</li>
+                <li><strong>Seasonalidade:</strong> Padrões sazonais e picos de demanda</li>
+            </ul>
+
+            <h2>Tecnologias Utilizadas</h2>
+            <div class="tech-stack">
+                <span class="tech-badge">Power BI</span>
+                <span class="tech-badge">SQL</span>
+                <span class="tech-badge">Power Query</span>
+                <span class="tech-badge">DAX</span>
+                <span class="tech-badge">Python (Analytics)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 N. Klein. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
